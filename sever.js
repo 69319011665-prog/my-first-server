@@ -1,11 +1,11 @@
 // 1. เรียกใช้งาน Module ที่ชื่อว่า 'http' ซึ่งเป็นระบบพื้นฐานของ Node.js สําหรับทําเซิร์ฟเวอร์
- const http = require('http');
+       http = require('http');
 
  // 2. กําหนดช่องทาง (Port) ที่เซิร์ฟเวอร์จะใช้สื่อสาร โดยให้ใช้ของที่ Cloud กําหนด
- const port = process.env.PORT || 3000;
+       port = process.env.PORT || 3000;
 
  // 3. สร้างเครื่องแม่ข่าย (Server) ที่คอยรับคําขอ (req) และตอบกลับ (res)
- const server = http.createServer((req, res) => {
+       server = http.createServer((req, res) => {
 
  // 3.1 ตั้งรหัสสถานะ 200 หมายถึง "ทํางานสําเร็จ (OK)"
  res.statusCode = 200;
